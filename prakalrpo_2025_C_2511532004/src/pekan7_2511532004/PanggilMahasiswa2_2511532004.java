@@ -2,7 +2,7 @@ package pekan7_2511532004;
 
 import java.util.Scanner;
 
-public class PanggilMahasiswa2 {
+public class PanggilMahasiswa2_2511532004 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
