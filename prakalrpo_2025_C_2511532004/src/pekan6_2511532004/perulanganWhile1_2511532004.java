@@ -4,24 +4,24 @@ import java.util.Scanner;
 
 public class perulanganWhile1_2511532004 {
 
-    public static void main(String[] args) {
-        int counter = 0;
-        String jawab;
-        boolean running = true;
+	public static void main(String[] args) {
+		int counter = 0;
+		String jawab;
+		boolean running = true;
 
-        Scanner scan = new Scanner(System.in);
-        while (running) {
-            counter++;
-            System.out.println("Jumlah = " + counter);
-            System.out.print("Apakah lanjut? (ya/tidak): ");
-            jawab = scan.nextLine();
+		Scanner scan = new Scanner(System.in);
+		while (running) {
+			counter++;
+			System.out.println("Jumlah = " + counter);
+			System.out.print("Apakah lanjut? (ya/tidak): ");
+			jawab = scan.nextLine();
 
-            if (jawab.equalsIgnoreCase("tidak")) {
-                running = false;
-            }
-        }
+			if (jawab.equalsIgnoreCase("tidak")) {
+				running = false;
+			}
+		}
 
-        System.out.println("Anda sudah melakukan perulangan sebanyak " + counter + " kali");
-        scan.close();
-    }
+		System.out.println("Anda sudah melakukan perulangan sebanyak " + counter + " kali");
+		scan.close();
+	}
 }

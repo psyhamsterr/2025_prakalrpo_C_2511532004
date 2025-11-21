@@ -5,47 +5,46 @@ import java.util.Random;
 
 public class GamePenjumlahan_2511532004 {
 
-    public static void main(String[] args) {  
-	  
-        Scanner console = new Scanner(System.in);  
-        Random rand = new Random();  
-	  
-        int points = 0;  
-        int wrong = 0;  
-	  
-        while (wrong < 3) {  
-	  
-            int result = play(console, rand);  
-            if (result > 0) {  
-                points++;  
-            } else {  
-                wrong++;  
-            }  
-        }  
-	  
-        System.out.println("You earned " + points + " total points.");  
-        console.close();  
-    }  
+	public static void main(String[] args) {
 
-    public static int play(Scanner console, Random rand) {  
-        int operands = rand.nextInt(4) + 2;  
-        int sum = rand.nextInt(10) + 1;  
-        System.out.print(sum);  
-        
-        for (int i = 2; i <= operands; i++) {
-            int n = rand.nextInt(10) + 1;
-            sum += n;
-            System.out.print(" + " + n);
-        }
-        System.out.print(" = " );
-        
-        int guess = console.nextInt();
-        if (guess == sum) {
-            return 1;
-        }
-        else {
-            System.out.println("Wrong the answer was " + sum);
-            return 0;
-        }
-    }  
+		Scanner console = new Scanner(System.in);
+		Random rand = new Random();
+
+		int points = 0;
+		int wrong = 0;
+
+		while (wrong < 3) {
+
+			int result = play(console, rand);
+			if (result > 0) {
+				points++;
+			} else {
+				wrong++;
+			}
+		}
+
+		System.out.println("You earned " + points + " total points.");
+		console.close();
+	}
+
+	public static int play(Scanner console, Random rand) {
+		int operands = rand.nextInt(4) + 2;
+		int sum = rand.nextInt(10) + 1;
+		System.out.print(sum);
+
+		for (int i = 2; i <= operands; i++) {
+			int n = rand.nextInt(10) + 1;
+			sum += n;
+			System.out.print(" + " + n);
+		}
+		System.out.print(" = ");
+
+		int guess = console.nextInt();
+		if (guess == sum) {
+			return 1;
+		} else {
+			System.out.println("Wrong the answer was " + sum);
+			return 0;
+		}
+	}
 }

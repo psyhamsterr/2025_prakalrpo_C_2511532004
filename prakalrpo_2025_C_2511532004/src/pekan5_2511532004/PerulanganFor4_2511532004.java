@@ -6,30 +6,23 @@ public class PerulanganFor4_2511532004 {
 	public static void main(String[] args) {
 		int jumlah = 0;
 		int batas;
-		
-		Scanner input= new Scanner(System.in);
+
+		Scanner input = new Scanner(System.in);
 		System.out.print("masukkan nilai batas = ");
 		batas = input.nextInt();
 		input.close();
-		
-		for (int i=1; i<=10; i++) {
+
+		for (int i = 1; i <= 10; i++) {
 			System.out.println(i);
 			jumlah = jumlah + i;
-			if (i<batas) {
+			if (i < batas) {
 				System.out.print(" + ");
-				
-			}
-			else {
+
+			} else {
 				System.out.print(" = ");
 			}
 			System.out.print(jumlah);
-			}
-			 }
-		
-		
-		
-		
-		
+		}
 	}
 
-
+}

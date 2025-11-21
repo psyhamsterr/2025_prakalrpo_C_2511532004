@@ -14,19 +14,18 @@ public class OperatorLogika {
 		System.out.print("input nilai boolean-2 (true/false): ");
 		A2 = keyboard.nextBoolean();
 		keyboard.close();
-		System.out.println("A1 =" +A1);
-		System.out.println("A2 =" +A2);
+		System.out.println("A1 =" + A1);
+		System.out.println("A2 =" + A2);
 		System.out.println("konjungsi");
-		c = A1&&A2;
+		c = A1 && A2;
 		System.out.println("true and false = " + c);
 		System.out.println("dikonjungsi");
-		c = A1||A2;
+		c = A1 || A2;
 		System.out.println("true or false = " + c);
 		System.out.println("negasi");
 		c = !A1;
 		System.out.println("bukan true = " + c);
-		
-		
+
 	}
 
 }

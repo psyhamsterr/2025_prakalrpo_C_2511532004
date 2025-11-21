@@ -28,9 +28,6 @@ public class OperatorAssignment {
 		System.out.println("assignment hasil bagi");
 		A1 %= A2;
 		System.out.println("sisa bagi: " + A1);
-		
-		
-		
 
 	}
 
